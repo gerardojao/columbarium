@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">	
+<link rel="stylesheet" type="text/css" href="columbario.css" >
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<title>COLUMBARIO</title>
+</head>
+<body >
+	
+	<!-- <header  class="header">
+		<h1 class="header__title">Contrato de Nichos</h1>
+		<a href="menuBEMcolumbario.html" class="header__register">Volver</a>
+	</header> -->
+	<!-- class main in main -->
+	<main id="main2" class="main2" >
+
+		<div class="all-users" id="all-users">
+			<div class="top-bar">
+				<h1 class="top-bat__title">Usuarios</h1>
+				<div class="top-bar__buttons">
+					<div class="search">
+						<input type="text" id="search-text" placeholder="Buscar por Nombre">
+						<input type="text" id="search-number" placeholder="Buscar por Nicho">
+					</div>
+					<div id="user-info-button" class="top-bar__user-info">
+						<i class="fas fa-plus"></i>
+					</div>
+				</div>
+			</div>
+			
+			<div id="content" class="content">
+				<div class="content__header">
+					<input type="checkbox" id="select-all-users">
+					<p class="content__text content__text--header">Id</p>
+					<p class="content__text content__text--header">Nicho</p>
+					<p class="content__text content__text--header">Difunto</p>
+					<p class="content__text content__text--header">Responsable</p>
+					<p class="content__text content__text--header">Teléfono</p>
+					<a href="#" id="delete-all-users" class="content__link button button--delete button--hide">Borrar todo<i class="fas fa-trash"></i> </a>
+				</div>
+				<div id="content__users" class="content__users">
+					
+				</div>
+			</div>
+		</div>
+
+
+		
+			
+	<div class="user-info" id="user-info" >
+
+		<div class="top-bar">
+			<h1 id="top-bar-title" class="top-bar-title">Nuevo Usuario</h1>
+			<a href="#" class="content__link button button--delete button--delete button--cancel">Cancelar<i class="fas fa-times"></i> </a>
+		</div>
+	<div class="mainprov">	
+		<form class="main__form">
+			<h2 class="main__form-title" >RESPONSABLE</h2>
+			
+			<input id="nicho" type="text" class="formulario__items" >
+			<label id="label" class="form-label" for="nicho">Nicho:</label>
+
+			<input id="responsable" type="text" class="formulario__items"  >
+			<label id="label" class="form-label" for="name">Responsable:</label>
+
+			<input id="cedulaResponsable" type="texto" class="formulario__items"  >
+			<label id="label" class="form-label" for="name">Cedula Responsable:</label>
+				
+			<input id="celular" type="text" class="formulario__items" >
+			<label id="label" class="form-label" for="celular">Número de Celular:</label>
+
+			
+			<input id="otroNumero" type="text" class="formulario__items" >
+			<label id="label" class="form-label" for="otroNumero">Otro Teléfono:</label>
+
+			
+			<textarea id="mensaje" name="comentarios" class="formulario__mensaje" cols="30" rows="5" ></textarea>
+			<label id="textarea" class="mensaje" for="mensaje">Documentos Consignados:</label>
+			
+		</form>
+		<form id="form2" class="main__form">
+
+			<h2 class="main__form-title" >BENEFICIARIO</h2>
+			<input id="beneficiario" type="text" class="formulario__items"  >
+			<label id="label" class="form-label" for="name">Beneficiario:</label>
+
+			<input id="fallecimiento" type="text" class="formulario__items" >
+			<label id="label" class="form-label" for="date">Fecha de Fallecimiento:</label>
+			<input id="acta" type="text" class="formulario__items" >
+			<label id="label" class="form-label" for="telefóno">Acta de defunción:</label>
+			
+			<input id="ingreso" type="text" class="formulario__items" >
+			<label id="label" class="form-label" for="ingreso">Fecha de Ingreso:</label>
+
+			<input id="pago" type="text" class="formulario__items" >
+			<label id="label" class="form-label" for="ingreso">Ultimo Pago:</label>
+		
+			<a href="#" id="add-user" class="content__link button button--edit">Añadir Usuario<i class="fas fa-plus"></i> </a>
+			<a href="#" id="update-user" class="content__link button button--edit">Actualizar Usuario<i class="fas fa-pen"></i> </a>
+			
+		</form>
+		<!-- -->
+		 
+	</div><!-- mainprov -->
+	</div>
+	</main>
+
+</body>
+<script src="index.js"></script>
+
+</html>
+
+
