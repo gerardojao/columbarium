@@ -217,6 +217,11 @@ const createUserRow = (user)=>{
   userNumeroCelular.textContent = user.NumeroCelular 
   userRow.append(userNumeroCelular)
 
+  let userUltimoPago = document.createElement("P")
+  userUltimoPago.classList.add("content__text")
+  userUltimoPago.textContent = user.UltimoPago 
+  userRow.append(userUltimoPago)
+
   let buttonEdit = document.createElement("A")
   buttonEdit.classList.add("content__link", "button", "button--edit")
   buttonEdit.textContent = "Editar"
