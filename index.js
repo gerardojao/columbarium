@@ -117,7 +117,7 @@ const saveUser = (id)=>{
    cedulaRes.value=user.CedulaResponsable
    otherCell.value = user.OtroCelular
    mensaje.value = user.Mensaje
-   pago.value=user.UltimoPago
+   pago.value = user.UltimoPago
 
    
 
