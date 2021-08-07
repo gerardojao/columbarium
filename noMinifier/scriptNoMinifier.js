@@ -53,7 +53,7 @@ const showUserInfo= ()=>{
 } 
 
 const hidderUserInfo= ()=>{
-  //console.log("Estamos en hidderUserInfo")
+  
   allUsers.classList.remove("all-users--hide")
   userInfo.classList.remove("user-info--show")
   form.reset()
@@ -131,12 +131,11 @@ const getUserId = (id)=>{
   id=id.substring(id.lastIndexOf("-")+1)
   console.log(id);  
   for (let i = 0; i < inputs.length; i++){ 
-    //console.log(inputs[i]);
+    
+
     if(inputs[i].nextElementSibling.classList.contains("form-label")){
        inputs[i].nextElementSibling.classList.replace("form-label","form-js")}
-     /*  if(inputs[i].value.length==0) {
-       inputs[i].nextElementSibling.classList.replace("form-js","form-label")
-   }  */
+     
   
   
 }
@@ -168,16 +167,16 @@ const getAllUsers = ()=>{
       contentUsers.append(fragment)
 
       allNames = Array.from(document.querySelectorAll('[data-difunto]'))    
-      //console.log(allNames);  
+       
       allNichos = Array.from(document.querySelectorAll('[data-nicho]')) 
-      //console.log(allNichos);
+      
     })
 
   .catch(err=>console.log(`Error: ${err.message}`))
 }
 
 const createUserRow = (user)=>{
-  /* Agregar un if else por el tamño del screen o si tiene la clase response */
+
   const fragment = document.createDocumentFragment()
 
   let userRow = document.createElement("DIV")
@@ -367,7 +366,7 @@ console.log(formData)
 } 
 
 const clean = ()=>{
-  // console.log("funcion clean")
+
   form.reset()
   form2.reset()
   for (let i = 0; i < inputs.length; i++)
@@ -414,7 +413,6 @@ searchText.addEventListener(`keyup`,e=>{
     } 
    for (const name of allNames) {
     
-       //con dataset.name accedemos al atributo data-name
        if (name.dataset.difunto.indexOf(value)==-1) {
            name.parentElement.style.display="none"
        }else{
@@ -453,14 +451,5 @@ mensaje.addEventListener("keyup",()=>{
     mensaje.nextElementSibling.classList.replace("mensaje-js","mensaje")}
  })
 
-/* for (let i = 0; i < inputs.length; i++)
-     inputs[i].addEventListener("keyup",()=>{
-    if(inputs[i].nextElementSibling.classList.contains("form-label"))
-        inputs[i].nextElementSibling.classList.replace("form-label","form-js")
-    if (inputs[i].value.length<1) {
-        inputs[i].nextElementSibling.classList.replace("form-js","form-label")
-    }
-    })
- */
 
 getAllUsers()
